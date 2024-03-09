@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker container background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Light text color */
+}
+
+select,
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #fff; /* Light border */
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5); /* Darker input background */
+    color: #fff; /* Light text color */
+}
+select#bookType {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff; /* Light background color for dropdown menu */
+    color: #000; /* Black text color for dropdown menu */
+}
+
+select#bookType option[value=""] {
+    color: #000000; /* White text color for the "-- Please Select --" option */
+}
+
+select#bookType:hover {
+    background-color: #ffffff; /* Lighter background color for dropdown menu on hover */
+}
+
+
+
+.rating {
+    display: flex;
+    justify-content: center; /* Center stars horizontally */
+    align-items: center; /* Center stars vertically */
+    margin-bottom: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    color: #888; /* Medium star color */
+    cursor: pointer;
+}
+
+.rating input:checked~label {
+    color: orange; /* Active star color */
+}
+
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Light text color */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+#charCount {
+    text-align: right;
+    color: #ccc; /* Lighter text color */
+    font-size: 12px;
+    margin-top: 5px;
+}
+input[type="text"]:hover,
+textarea:hover,
+select:hover {
+    border-color: #fff; /* Light border color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter input background on hover */
+    color: #fff; /* Light text color on hover */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+

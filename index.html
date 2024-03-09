@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Assessment Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quality Assessment of Books</h1>
+        <label for="bookType">Select Book Type:</label>
+        <select id="bookType" name="bookType" required>
+            <option value="">-- Please Select --</option>
+            <option value="textbook">Textbook</option>
+            <option value="reference">Reference Book</option>
+            <option value="ebook">E-Book</option>
+        </select>
+
+        <label for="bookTitle">Book Title:</label>
+        <input type="text" id="bookTitle" name="bookTitle" required>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+
+        <p>Rate the book:</p>
+        <div class="rating">
+            <input type="radio" id="star1" name="rating" value="1" required>
+            <label for="star1" title="1 star">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2" required>
+            <label for="star2" title="2 stars">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3" required>
+            <label for="star3" title="3 stars">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4" required>
+            <label for="star4" title="4 stars">&#9733;</label>
+            <input type="radio" id="star5" name="rating" value="5" required>
+            <label for="star5" title="5 stars">&#9733;</label>
+        </div>
+        
+        
+        
+        <label for="review">Review (Max 200 characters):</label>
+        <textarea id="review" name="review" rows="4" maxlength="200" required></textarea>
+        <div id="charCount">Characters remaining: 200</div>
+
+        <button id="submitBtn" name="submitBtn">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
